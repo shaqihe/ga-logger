@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div data-log-id="a">
+        <ul data-log-id="b" data-log-data='{"user":"testName"}'>
+            <li   data-log-data='{"age":"1111"}' data-log-act="publish">点击此处，打开控制台查看Network</li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="./src/util.js"> </script>
+<script type="text/javascript" src="./src/logger.js"> </script>
+<script type="text/javascript">
+    Logger.delegate(document.body, 'click');
+</script>
+</html>
