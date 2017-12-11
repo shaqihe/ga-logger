@@ -177,7 +177,6 @@ Logger.log = function (node, type, status) {
     ret = this.formatLog(
         type||'click', ret
     );
-    debugger
     if (!ret){
         return;
     }

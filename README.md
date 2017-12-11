@@ -1,9 +1,11 @@
 # ga-logger
 demo:
-git clone
-Open ./demo.html in a browser
 
-Then press F12 and you will find some Network info.
+    git clone
+
+    Open ./demo.html in a browser
+
+    Then press F12 and you will find some Network info.
 
 
  - ga打点，灵活配置
@@ -11,3 +13,18 @@ Then press F12 and you will find some Network info.
 
 
 解决打点的“灵活配置”和“使用场合产生不同命名空间” 简单的写一个logger解决方案。
+
+```
+<div data-log-id="a">
+        <ul data-log-id="b" data-log-data='{"user":"testName"}'>
+            <li   data-log-data='{"age":"1111"}' data-log-act="publish">点击此处</li>
+        </ul>
+</div>
+
+//发送的数据为：
+{
+    "user":"testName",
+    "age":"1111",
+    "action":"a_b_publish_click"
+}
+```
