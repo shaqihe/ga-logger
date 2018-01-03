@@ -1,6 +1,7 @@
 # ga-logger
-demo:
 
+####**dome在线预览：[dome在线预览][1]**
+demo:
     git clone
 
     Open ./demo.html in a browser
@@ -28,3 +29,6 @@ demo:
     "action":"a_b_publish_click"
 }
 ```
+
+
+  [1]: http://happy.g1024.top/ga-logger/demo.html

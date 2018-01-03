@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        ul{
+            border: 1px solid #999;
+            width: 800px;
+            margin: 50px auto;
+        }
+        li {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #666;
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
+    <h3>可以审查元素，查看dom上绑定的log数据，打开控制台查看 console> info 或者 Network 查看具体发生的数据<br/>
+        Then press F12 and you will find some Network info</h3>
+    <p>建立一个事件委托模型，统一处理埋点的获取。.</p>
+    <a href="https://github.com/shaqihe/ga-logger"> 代码移步git</a>
     <div data-log-id="a">
-        <ul data-log-id="b" data-log-data='{"user":"testName"}'>
-            <li   data-log-data='{"age":"1111"}' data-log-act="publish">点击此处，打开控制台查看Network</li>
+        <ul data-log-id="b" data-log-data='{"user":"testName11111"}'>
+            <li data-log-data='{"age":"1111"}' data-log-act="publish">此标签的log属性为：data-log-data='{"age":"1111"}' data-log-act="publish"</li>
+            <li data-log-data='{"age":"2222"}' data-log-act="delete"> 此标签的log属性为：data-log-data='{"age":"1111"}' data-log-act="delete"</li>
+        </ul>
+        <ul data-log-id="c" data-log-data='{"user":"testName22222"}'>
+            <li data-log-data='{"data":"3333"}' data-log-act="add">此标签的log属性为：data-log-data='{"data":"3333"}' data-log-act="add"</li>
         </ul>
     </div>
+
 </body>
 <script type="text/javascript" src="./src/util.js"> </script>
 <script type="text/javascript" src="./src/logger.js"> </script>
