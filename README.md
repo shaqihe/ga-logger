@@ -1,5 +1,7 @@
 # ga-logger
 
+在一个通用模块中打点，做到不同使用者发出的打点数据差异化
+
 ####**dome在线预览：[dome在线预览][1]**
 demo:
     git clone
@@ -29,6 +31,5 @@ demo:
     "action":"a_b_publish_click"
 }
 ```
-
 
   [1]: http://happy.g1024.top/ga-logger/demo.html
