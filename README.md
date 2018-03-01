@@ -33,3 +33,4 @@ demo:
 ```
 
   [1]: http://happy.g1024.top/ga-logger/demo.html
+
